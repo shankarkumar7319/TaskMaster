@@ -1,0 +1,177 @@
+/* Minimal, clean styles for the Task Manager */
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, system-ui, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+  background: rgb(171, 213, 228);
+  color: #111111;
+}
+
+.App {
+  max-width: 520px;
+  margin: 0 auto;
+  padding: 24px;
+  border: 0px solid black;
+  margin-top: 40px;
+  height: 550px;
+  background-color: rgb(247, 244, 244);
+  border-radius: 19px;
+}
+
+header {
+  margin-bottom: 16px;
+}
+
+header h1 {
+  margin: 0 0 4px 0;
+  font-size: 28px;
+  text-align: center;
+  color: rgb(4, 141, 247);
+}
+
+header p {
+  margin: 0;
+  color: #555;
+  text-align: center;
+}
+
+.task-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 16px 0;
+}
+
+#inp {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex: 1;
+  margin-top: 15px;
+  height: 40px;
+  border: 0px solid #e5e7eb;
+  transition: 0.3 ease;
+  border-radius: 18px;
+  background: #ffffff;
+}
+
+#inp input {
+  flex: 1;
+  border: 0;
+  outline: 0;
+  background: transparent;
+  font-size: 14px;
+  margin-left: 20px;
+}
+
+#inp button {
+  border: 0;
+  background: #111111;
+  color: #ffffff;
+  padding: 8px 12px;
+  border-radius: 18px;
+  height: 39px;
+  cursor: pointer;
+  background-color: rgb(4, 141, 247);
+  font-weight: bold;
+}
+
+#btns {
+  display: flex;
+  gap: 18px;
+  margin-left: 130px;
+  margin-top: 5px;
+  border-radius: 15px;
+}
+
+#btns select {
+  padding: 8px 10px;
+  border: 1px solid #e5e7eb;
+  border-radius: 6px;
+  background: #ffffff;
+}
+
+.task-list {
+  list-style: none;
+  padding: 0;
+  margin: 16px 0;
+  margin-top: 27px;
+  overflow-y: auto;
+  
+}
+
+.task-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+  list-style-type: none;
+  padding: 12px;
+  margin-top: 15px;
+  border: 0px solid #eeeeee;
+  border-radius: 8px;
+  height: 50px;
+  margin-top: 15px;
+  background: #ffffff;
+}
+
+.task-list li .complete {
+  border: 0px solid black;
+  font-weight: bold;
+  background-color: rgb(234, 234, 234);
+  border-radius: 15px;
+  margin-right: 7px;
+}
+.task-list li .delete {
+  border: 0px solid black;
+  font-weight: bold;
+  background-color: rgb(234, 234, 234);
+  border-radius: 15px;
+  color: red;
+}
+.task-list button {
+  background: none;
+  border: 0;
+  color: #047857;
+  cursor: pointer;
+  padding: 6px 8px;
+  border-radius: 6px;
+}
+
+.progress-tracker {
+  margin-top: 19px;
+}
+
+.progress-tracker p {
+  text-align: center;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.progress-bar {
+  height: 9px;
+  background: #eeeeee;
+  border-radius: 999px;
+  overflow:  hidden;
+}
+
+.progress {
+  height: 100%;
+  background: linear-gradient(#14bc78);
+}
+
+.clear-btn {
+  margin-top: 16px;
+  background: #dc2626;
+  color: #ffffff;
+  border: 0;
+  margin: 20px 0 0 180px;
+  padding: 10px 14px;
+  border-radius: 15px;
+  cursor: pointer;
+}
